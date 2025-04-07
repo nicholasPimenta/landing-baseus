@@ -52,7 +52,7 @@ export default function Header() {
             <a
               href="https://wa.me/seunumerodetelefone"
               target="_blank"
-              className="bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded-lg text-white"
+              className="bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded-lg text-gray-800"
             >
               Compre agora
             </a>

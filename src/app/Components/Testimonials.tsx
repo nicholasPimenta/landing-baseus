@@ -1,8 +1,10 @@
 import { Star } from "lucide-react";
 import Image from "next/image";
+import React from "react";
 
 const testimonialsData = [
   {
+    id: 0,
     name: "Mariana R.",
     img: "/Female.png",
     text: "Estou simplesmente apaixonada por esses fones! O design é elegante, o som é bem equilibrado e os graves são incríveis. A bateria dura muito e o encaixe nos ouvidos é super confortável, não incomoda nem depois de horas de uso. Uso tanto para música quanto para chamadas, e a qualidade do microfone me surpreendeu. Valeu cada centavo!",
@@ -10,6 +12,7 @@ const testimonialsData = [
     label: "Apaixonada",
   },
   {
+    id: 1,
     name: "Yasmim",
     img: "/Female.png",
     text: "A qualidade de som e o isolamento acústico são ótimos! A bateria dura bastante e a conexão é super rápida. Só achei um pouco grande para minha orelha, mas nada que atrapalhe a experiência. No geral, um ótimo produto!",
@@ -17,6 +20,7 @@ const testimonialsData = [
     label: "Bom custo-benefício",
   },
   {
+    id: 2,
     name: "Flávio",
     img: "/Male.png",
     text: "Comprei para minha esposa e ela simplesmente amou! O design é moderno, confortável e o som tem uma ótima definição. Além disso, o custo-benefício é excelente. Recomendo!",
@@ -24,6 +28,7 @@ const testimonialsData = [
     label: "Ótima compra",
   },
   {
+    id: 3,
     name: "Robson de Sousa Nascimento",
     img: "/Male.png",
     text: "Estou impressionado com a qualidade de som e a durabilidade da bateria. Posso passar o dia todo ouvindo música sem precisar recarregar. Ótima escolha para quem busca um fone premium por um preço acessível!",
@@ -31,6 +36,7 @@ const testimonialsData = [
     label: "Recomendado",
   },
   {
+    id: 4,
     name: "Jackson Mota",
     img: "/Male.png",
     text: "Fiquei surpreso com a beleza e eficiência desse fone. Além de ter um design elegante, a bateria realmente dura muito. Perfeito para quem gosta de curtir músicas ou chamadas sem preocupações!",
@@ -43,10 +49,9 @@ export default function Testimonials() {
   return (
     <div>
       <h1 className="text-center text-4xl font-semibold mb-4">Depoimentos</h1>
-      {testimonialsData.map((testimonial, index) => (
-        <>
+      {testimonialsData.map((testimonial) => (
+        <React.Fragment key={testimonial.id}>
           <div
-            key={index}
             className="mb-6 mx-6 flex flex-col sm:flex-row items-center sm:items-start gap-4"
           >
             {/* Ícone com tamanho fixo */}
@@ -75,7 +80,7 @@ export default function Testimonials() {
               <p className="text-gray-600 text-sm">{testimonial.label}</p>
             </div>
           </div>
-        </>
+        </React.Fragment>
       ))}
     </div>
   );
