@@ -7,8 +7,8 @@ import {
 
 export default function Faq() {
   return (
-    <div>
-      <h1 className="text-center text-4xl font-semibold mb-4">
+    <div id="faq">
+      <h1 className="text-center text-4xl font-semibold mb-4 text-blue-700">
         Perguntas frequentes
       </h1>
       <Accordion type="single" collapsible className="mx-6">

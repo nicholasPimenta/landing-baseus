@@ -8,7 +8,7 @@ import WelcomePage from "./Components/WelcomePage";
 
 export default function Home() {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-blue-100">
       <Header />
       <main>
         <WelcomePage />

@@ -14,7 +14,7 @@ const testimonialsData = [
   {
     id: 1,
     name: "Yasmim",
-    img: "/Female.png",
+    img: "/Female2.png",
     text: "A qualidade de som e o isolamento acústico são ótimos! A bateria dura bastante e a conexão é super rápida. Só achei um pouco grande para minha orelha, mas nada que atrapalhe a experiência. No geral, um ótimo produto!",
     rating: "4/5",
     label: "Bom custo-benefício",
@@ -22,7 +22,7 @@ const testimonialsData = [
   {
     id: 2,
     name: "Flávio",
-    img: "/Male.png",
+    img: "/Male3.png",
     text: "Comprei para minha esposa e ela simplesmente amou! O design é moderno, confortável e o som tem uma ótima definição. Além disso, o custo-benefício é excelente. Recomendo!",
     rating: "5/5",
     label: "Ótima compra",
@@ -38,7 +38,7 @@ const testimonialsData = [
   {
     id: 4,
     name: "Jackson Mota",
-    img: "/Male.png",
+    img: "/Male2.png",
     text: "Fiquei surpreso com a beleza e eficiência desse fone. Além de ter um design elegante, a bateria realmente dura muito. Perfeito para quem gosta de curtir músicas ou chamadas sem preocupações!",
     rating: "4/5",
     label: "Impressionante",
@@ -47,8 +47,8 @@ const testimonialsData = [
 
 export default function Testimonials() {
   return (
-    <div>
-      <h1 className="text-center text-4xl font-semibold mb-4">Depoimentos</h1>
+    <div id="testimonials">
+      <h1 className="text-center text-4xl font-semibold mb-4 text-blue-700">Depoimentos</h1>
       {testimonialsData.map((testimonial) => (
         <React.Fragment key={testimonial.id}>
           <div
@@ -66,18 +66,18 @@ export default function Testimonials() {
 
             {/* Texto do depoimento */}
             <div className="flex-1">
-              <p className="font-medium">{testimonial.name}</p>
-              <p className="text-gray-700">{testimonial.text}</p>
+              <p className="font-medium text-blue-700">{testimonial.name}</p>
+              <p className="text-gray-800">{testimonial.text}</p>
             </div>
           </div>
-          <div className="mb-6 mx-6 flex flex-col sm:flex-row items-center justify-start sm:items-start gap-4">
+          <div className="mb-8 mx-6 flex flex-col sm:flex-row items-center justify-start sm:items-start gap-4">
             {/* Estrelas e resumo */}
             <div className="flex flex-col items-center sm:items-start">
               <div className="flex flex-row gap-2">
-                <Star className="text-yellow-400" />
+                <Star className="text-yellow-500" />
                 <p>{testimonial.rating}</p>
               </div>
-              <p className="text-gray-600 text-sm">{testimonial.label}</p>
+              <p className="text-sm">{testimonial.label}</p>
             </div>
           </div>
         </React.Fragment>
