@@ -66,6 +66,10 @@ http://localhost:3000
 npm run build
 ```
 
+## 🌐 Deploy
+O projeto está hospedado na **Vercel** e pode ser acessado através do seguinte link:
+[🔗 Baseus Landing Page - Deploy](https://landing-baseus.vercel.app/)
+
 📜 Licença
 
 Projeto de fins educacionais e demonstrativos. Produto e marca pertencem à Baseus®.
